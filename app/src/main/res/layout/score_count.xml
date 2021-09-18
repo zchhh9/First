@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="24dp"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/Team"
+        android:layout_width="match_parent"
+        android:layout_height="62dp"
+        android:layout_marginBottom="16dp"
+        android:gravity="center"
+        android:textSize="35sp"
+        android:text="@string/teama"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+    <TextView
+        android:id="@+id/output"
+        android:layout_width="match_parent"
+        android:layout_height="79dp"
+        android:layout_marginBottom="16dp"
+        android:gravity="center"
+        android:textSize="35sp"
+        android:text="0"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large" />
+
+    <Button
+        android:id="@+id/score1"
+        android:layout_width="match_parent"
+        android:layout_marginBottom="10dp"
+        android:layout_height="wrap_content"
+        android:text="+1"
+        android:onClick="myClick"/>
+
+    <Button
+        android:id="@+id/score2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:text="+2"
+        android:onClick="myClick"/>
+
+    <Button
+        android:id="@+id/score3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="50dp"
+        android:text="+3"
+        android:onClick="myClick"/>
+
+    <Button
+        android:id="@+id/reset"
+        android:layout_width="173dp"
+        android:layout_height="35dp"
+        android:layout_gravity="center"
+        android:text="reset"
+        android:onClick="myClick"/>
+</LinearLayout>

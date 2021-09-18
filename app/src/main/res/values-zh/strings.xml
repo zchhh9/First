@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Week2_hello</string>
+    <string name="btn1_label">班级</string>
+    <string name="btn1_lable">姓名</string>
+    <string name="Password">密码</string>
+    <string name="submit">提交</string>
+    <string name="weight">请输入体重(单位：千克)</string>
+    <string name="height">请输入身高(单位：米)</string>
+    <string name="teama">Team A</string>
+    <string name="point1">+1 point</string>
+    <string name="point2">+2 point</string>
+    <string name="point3">+3 point</string>
+    <string name="reset">reset</string>
+</resources>

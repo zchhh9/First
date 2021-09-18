@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Week2_hello</string>
+    <string name="btn1_lable">Name</string>
+    <string name="btn1_label">Classroom</string>
+
+    <string name="Password">Password</string>
+    <string name="submit">sumbit</string>
+    <string name="teama">Team A</string>
+    <string name="weight">please input your weight(kg)</string>
+    <string name="height">please input your height(m)</string>
+    <string name="point1">+1 point</string>
+    <string name="point2">+2 point</string>
+    <string name="point3">+3 point</string>
+    <string name="reset">reset</string>
+</resources>

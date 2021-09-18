@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".twoteam">
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/teamA"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+
+                android:layout_marginBottom="16dp"
+                android:gravity="center"
+                android:text="@string/teama"
+                android:textSize="35sp" />
+
+            <TextView
+                android:id="@+id/output1"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_marginBottom="16dp"
+                android:gravity="center"
+                android:text="0"
+                android:textSize="35sp" />
+
+            <Button
+                android:id="@+id/point1a"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:text="@string/point1"
+                android:onClick="click"/>
+
+            <Button
+                android:id="@+id/point2a"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:text="@string/point2"
+                android:onClick="click"/>
+
+            <Button
+                android:id="@+id/point3a"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/point3"
+                android:onClick="click"/>
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="3dp"
+            android:layout_height="match_parent"/>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/teamB"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_marginBottom="16dp"
+                android:gravity="center"
+                android:text="TeamB"
+                android:textSize="35sp" />
+
+            <TextView
+                android:id="@+id/output2"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:layout_marginBottom="16dp"
+                android:gravity="center"
+                android:text="0"
+                android:textSize="35sp" />
+
+            <Button
+                android:id="@+id/point1b"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:text="@string/point1"
+                android:onClick="myclickb"/>
+
+            <Button
+                android:id="@+id/point2b"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="16dp"
+                android:text="@string/point2"
+                android:onClick="myclickb"/>
+
+            <Button
+                android:id="@+id/point3b"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/point3"
+                android:onClick="myclickb"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/reset"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="50dp"
+        android:text="@string/reset"
+        android:onClick="click"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="24dp"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/out"
+        android:layout_width="match_parent"
+        android:layout_height="113dp"
+        android:layout_marginBottom="16dp"
+        android:gravity="center"
+        android:text="BMI计算器"
+        android:singleLine="false"
+        android:textSize="35sp" />
+    <EditText
+        android:id="@+id/inputw"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:layout_marginBottom="16dp"
+        android:inputType="numberDecimal"
+        android:hint="@string/weight"/>
+
+    <EditText
+        android:id="@+id/inputh"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="16dp"
+        android:ems="10"
+        android:inputType="numberDecimal"
+        android:hint="@string/height"/>
+
+    <Button
+        android:id="@+id/btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/submit"
+        android:layout_marginBottom="36dp"
+        android:onClick="myClick" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="match_parent"
+        android:layout_height="209dp"
+        android:singleLine="false"
+        android:text="温馨提示：\nBMI是评估身高体重比例的参考指数，计算公式为：
+        \n体重(kg)除以身高(m)的平方(BMI=公斤/m²)\n成年人的BMI值处于以下阶段：
+        \n体形分类    BMI值范围\n偏瘦            10.0≤18.4
+        \n正常            18.5≤23.9\n过重            24.0≤27.9
+        \n肥胖            28.0≤32.0
+" />
+
+</LinearLayout>
