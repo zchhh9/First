@@ -15,7 +15,6 @@ public class Score_count extends AppCompatActivity {
         setContentView(R.layout.score_count);
         Log.i("111","onCreate:开始运行了");
         Log.i(TAG,"inCreate:");
-
     }
     public void myClick(View btn){
         Log.i(TAG,"myClick:AAAA");
