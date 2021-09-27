@@ -8,15 +8,16 @@
     tools:context=".RMBActivity">
 
     <EditText
-        android:id="@+id/RMB"
+        android:id="@+id/input"
         android:layout_width="match_parent"
         android:layout_height="78dp"
         android:ems="10"
         android:gravity="center"
+        android:hint="InputRMB"
         android:inputType="numberDecimal"
         android:layout_marginBottom="10dp"
         android:textSize="25sp"
-        android:text="InputRMB" />
+       />
 
     <TextView
         android:id="@+id/output"
@@ -50,7 +51,7 @@
         android:layout_width="358dp"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:layout_marginBottom="10dp"
+        android:layout_marginBottom="24dp"
         android:onClick="myClick"
         android:text="WON" />
 

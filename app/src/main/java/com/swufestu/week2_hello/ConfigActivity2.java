@@ -33,8 +33,32 @@ public class ConfigActivity2 extends AppCompatActivity {
         euroText.setText(String.valueOf(euro2));
         wonText.setText(String.valueOf(won2));
     }
-    public void rate(View btn){
+    public void save(View btn){
        Log.i(TAG,"save");
+       //获取新的值
+       float newdollar= Float.parseFloat(dollarText.getText().toString());
+       float neweuro= Float.parseFloat(euroText.getText().toString());
+       float newwon= Float.parseFloat(wonText.getText().toString());
+
+       Log.i(TAG,"获取到新的值");
+       Log.i(TAG,"onCreate:newdollar="+newdollar);
+       Log.i(TAG,"onCreate:neweuro="+neweuro);
+       Log.i(TAG,"onCreate:newwon="+newwon);
+       Intent intent=getIntent();
+       //保存到Bundle或放入到Extra
+       /*intent.putExtra("dollar_key",newdollar);
+       intent.putExtra("euro_key",neweuro);
+       intent.putExtra("won_key",newwon);*/
+
+       Bundle bdl=new Bundle();
+       bdl.putFloat("dollor_key",newdollar);
+       bdl.putFloat("euro_key",neweuro);
+       bdl.putFloat("won_key",newwon);
+       intent.putExtras(bdl);
+       setResult(3,intent);
+       //返回到调用页面
+
+       finish();
     }
 
 }

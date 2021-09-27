@@ -14,7 +14,7 @@
         android:layout_marginBottom="10dp"
         android:ems="10"
         android:layout_gravity="center"
-        android:inputType="textPersonName"
+        android:inputType="numberDecimal"
         />
 
     <EditText
@@ -24,7 +24,7 @@
         android:layout_marginBottom="10dp"
         android:layout_gravity="center"
         android:ems="10"
-        android:inputType="textPersonName"
+        android:inputType="numberDecimal"
         />
 
     <EditText
@@ -34,7 +34,7 @@
         android:layout_gravity="center"
         android:layout_marginBottom="10dp"
         android:ems="10"
-        android:inputType="textPersonName"
+        android:inputType="numberDecimal"
         />
 
     <Button
@@ -43,5 +43,5 @@
         android:layout_height="wrap_content"
         android:layout_gravity="center"
         android:text="SAVE"
-        android:onClick="rate"/>
+        android:onClick="save"/>
 </LinearLayout>
