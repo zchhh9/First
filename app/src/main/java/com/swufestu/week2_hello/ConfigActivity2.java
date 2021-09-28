@@ -1,6 +1,8 @@
 package com.swufestu.week2_hello;
 
+import android.app.Activity;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.util.Log;
@@ -46,18 +48,17 @@ public class ConfigActivity2 extends AppCompatActivity {
        Log.i(TAG,"onCreate:newwon="+newwon);
        Intent intent=getIntent();
        //保存到Bundle或放入到Extra
-       /*intent.putExtra("dollar_key",newdollar);
+       intent.putExtra("dollar_key",newdollar);
        intent.putExtra("euro_key",neweuro);
-       intent.putExtra("won_key",newwon);*/
+       intent.putExtra("won_key",newwon);
 
-       Bundle bdl=new Bundle();
+      /* Bundle bdl=new Bundle();
        bdl.putFloat("dollor_key",newdollar);
        bdl.putFloat("euro_key",neweuro);
        bdl.putFloat("won_key",newwon);
-       intent.putExtras(bdl);
+       intent.putExtras(bdl);*/
        setResult(3,intent);
        //返回到调用页面
-
        finish();
     }
 
