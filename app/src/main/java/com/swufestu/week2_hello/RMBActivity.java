@@ -109,6 +109,10 @@ public class RMBActivity extends AppCompatActivity implements  Runnable{
             }
         };
         //开启线程
+        /* 用类新定义线程
+        MyThread td=new MyThread();
+        td.setHandler(handler); */
+
         Thread t=new Thread(this);
         t.start();//自动调用this.run()        
     }
