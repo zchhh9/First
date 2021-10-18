@@ -12,6 +12,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Week2_hello">
         <activity
+            android:name=".RateCalcActivity"
+            android:exported="true" />
+        <activity
+            android:name=".RateList2Activity"
+            android:exported="true" />
+        <activity
             android:name=".RateListActivity"
             android:exported="true" />
         <activity
